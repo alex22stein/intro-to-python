@@ -1,4 +1,4 @@
-#create the essencial lists to be used
+#create the essencial lists to be used.
 items = []
 prices = []
 
