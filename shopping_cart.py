@@ -1,4 +1,4 @@
-#create the essencial lists to be used.
+#create the essencial lists to be used
 items = []
 prices = []
 
@@ -75,5 +75,5 @@ while action != 5:
     action = int(input("Please enter an action: "))
 
 print()
-print("Thank you! See you")
+print("Thank you! See you!")
 print()
