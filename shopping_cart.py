@@ -3,6 +3,7 @@ items = []
 prices = []
 
 #possible actions presentation
+print()
 print("Welcome to the shopping cart program!")
 print()
 print("Please select one of the following: ")
@@ -11,7 +12,7 @@ print("2.View cart")
 print("3.Remove item")
 print("4.Compute total")
 print("5.Quit")
-action = int(input("Please enter an action: "))
+action = int(input("Please enter an action number: "))
 
 while action != 5:
     #add item
@@ -34,7 +35,8 @@ while action != 5:
             print("The content of the shopping cart are: ")
             for item in items:
                 count = count + 1
-                print(f"{count+1}. {items[count].capitalize()} - ${prices[count]}")
+                price = "{:.2f}".format(prices[count])
+                print(f"{(count+1):>0}. {items[count].capitalize():>2} {'-  $':>8}  {price:>1}")
         else:
             print("The cart is empty")
         print()
@@ -62,9 +64,16 @@ while action != 5:
         summ = 0
         for price in prices:
             summ = summ + price
+        total = "{:.2f}".format(summ)
         print(f"The total price is: ${summ}")
         print()
-    
+
+    #in the case you select a not possible action
+    if action > 5 or action < 1:
+        print()
+        print("Not possible action")
+        print()
+
     #next action to looping works
     print("Please select one of the following: ")
     print("1.Add item")
@@ -73,6 +82,8 @@ while action != 5:
     print("4.Compute total")
     print("5.Quit")
     action = int(input("Please enter an action: "))
+
+    
 
 print()
 print("Thank you! See you!")
