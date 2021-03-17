@@ -1,0 +1,2 @@
+This simple program is openning the file and interacting to the lines. Using it, I created a list calls employees with them name and them information in each item.
+Then I displayed the information (name, ID, job, paycheck). The paycheck is the amount the employee receive two times per month acording their anual salary. And if the employee is an engineer, he or she will receive a plus of 1000 dollars in each paycheck
